@@ -1,0 +1,235 @@
+p
+{
+	font-size: 14px; /* Paragraphes de 14 pixels */
+	font-family: Comic Sans MS, "Arial Black", Arial, Verdana, sans-serif;
+
+}
+
+#cadre
+{
+	display: flex;
+	height: 350px;
+	color: rgb(255, 135, 0);;
+	text-decoration: underline;
+	border: 10px solid transparent;
+	border-image: url("border.png") 30 stretch;
+}
+
+
+#profil
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	background-color: black;
+}
+
+#lionprofil
+{
+	background-image: url("lion.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+}
+
+
+#intro
+{
+	margin: 50px;
+}
+h1
+{
+	font-size: 40px; /* Titres de 40 pixels */
+
+}
+
+
+body
+{
+		background-color: rgb(44, 40, 40); /* Le fond de la page sera noir */
+    color: white; /* Le texte de la page sera blanc */
+		transition: background-color .5s;
+}
+
+
+a /* Liens par défaut (non survolés) */
+{
+	text-decoration: none;
+	color: rgb(245, 155, 75);
+	font-style: italic;
+}
+a:hover /* Apparence au survol des liens */
+{
+	text-decoration: underline;
+	color: rgb(252, 207, 2);
+}
+
+table
+{
+	display:flex;
+	height: 60%;
+	width: 100%;
+}
+
+img
+{
+	width: 20%;
+	height: auto;
+}
+
+.element
+{
+	text-align: center;
+	padding: 15px;
+}
+
+footer
+{
+	text-align: center;
+}
+
+#element1 , #element4
+{
+ background-color: rgb(245, 155, 75);
+ color:rgb(44, 40, 40);
+}
+
+#element2 , #element3
+{
+	background-color: rgb(44, 40, 40);
+}
+
+td, th
+{
+	border: 3px white solid;
+}
+
+table
+{
+	background-color: white;
+}
+
+#conteneurfooter
+{
+	display: flex;
+	width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: ##0f0f0f;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+input[type=text], select, textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+	label
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+button[type=submit]
+{
+    background-color: #FC830A ;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+button[type=submit]:hover
+{
+    background-color: rgb(252, 207, 2)  ;
+		color: Black ;
+}
+
+
+.col-25
+{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75
+{
+
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row
+{
+	padding-left: 20%;
+}
+
+.submit
+{
+	justify-content: center;
+}
+@media screen and (max-width: 600px)
+{
+		#lionprofil{
+			display:none;
+		}
+		#profil{
+			width:100%;
+		}
+		table{
+			display: flex;
+			flex-direction: row;
+		}
+    .col-25, .col-75, input[type=submit]
+		{
+        width: 100%;
+        margin-top: 0;
+    }
+}
